@@ -1,0 +1,428 @@
+/* Container settings */
+.vehicle-history-container {
+    background: linear-gradient(90deg, #0d025f 0%, #1b09a6 50%, #2e50f9 100%);
+    padding: 50px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+}
+
+/* Heading styles */
+.heading-primary {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.heading-secondary {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+.heading-tertiary {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Button styles */
+.custom-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #3d33fa;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.custom-button:hover {
+    background-color: #fcfdfe;
+    border-color: #0f0257;
+    color: rgb(20, 20, 147);
+}
+
+.vh-h-container{
+  background:white ;
+  padding: 50px;
+  text-align: center;
+  border-radius: 8px;
+  color: rgb(7, 7, 7);
+}
+.button2-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 900;
+  border-color: #0f0257;
+}
+
+/* Button styles */
+.custom2-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #03035b;
+  border-color: #0f0257;
+  background-color: #f8f8fa;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.custom2-button:hover {
+  background-color: #12058d;
+  border-color: #0f0257;
+  color: rgb(244, 244, 248);
+}
+
+
+.vehicle-history-reports {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.report-column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.section-title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: serif;
+    margin-bottom: 15px;
+    color: #090909;
+
+}
+
+.section-description {
+    font-size: 20px;
+    font-family: serif;
+    margin-bottom: 30px;
+    color: rgb(7, 7, 7);
+
+}
+
+.report-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.report-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(50% - 10px); /* Adjusts the width of each report item to fit two in a row */
+    box-sizing: border-box;
+}
+
+.report-image img {
+    width: 100%;
+    height: auto;
+}
+
+.report-details {
+    padding: 15px;
+}
+
+.report-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.report-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: rgb(3, 3, 3);
+}
+
+.vehicle-history-reports {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.report-column {
+    flex: 1 1 calc(50% - 40px); /* Adjusts the column width to fit two columns */
+    margin: 0 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0a0909;
+}
+
+.report-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.report-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(50% - 10px); /* Adjusts the width of each report item to fit two in a row */
+    box-sizing: border-box;
+}
+
+.report-image img {
+    width: 100%;
+    height: auto;
+}
+
+.report-details {
+    padding: 15px;
+    
+}
+
+.report-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+.report-info li {
+    color: #050505;
+    font-size: 14px;
+    margin-bottom: 5px;  
+}
+
+/* Container for the entire section */
+.vh-container {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Container for the heading */
+  .vh-heading-container {
+    margin-bottom: 20px;
+  }
+  
+  .vh-heading-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Container for the description text */
+  .vh-text-container {
+    margin-bottom: 30px;
+
+  }
+  
+  .vh-description {
+    font-size: 21px;
+    font-family: serif;
+    color: #080808;
+  }
+  
+  /* Container for the list of makes */
+
+
+  .vh-makes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .vh-make {
+    margin: 10px 15px;
+  }
+  
+  .vh-make a {
+    font-size: 18px;
+    color: #0e08bf;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .vh-make a:hover {
+    color: #0e1595;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .vh-make a {
+      font-size: 16px;
+    }
+  }
+
+  /* Container for the entire section */
+.vh-container {
+    padding: 5px 0;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  /* Styling the heading */
+  .heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #070707;
+  }
+  
+  /* Styling the unordered list */
+  .link-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  /* Individual list items */
+  .link-item {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  /* Styling the links */
+  .link-item a {
+    color: #1509be;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .link-item a:hover {
+    color: #080163;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .link-list {
+      display: block;
+    }
+  
+    .link-item {
+      margin-bottom: 15px;
+    }
+  }
+
+  .divider {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    margin: 20px 0;
+  }
+  
+  .divider-separator {
+    width: 97%;
+    height: 2px;
+    background-color: #000;
+    border: none;
+  }
+
+  .stickers-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px; /* Space between the grid items */
+    padding: 40px;
+  }
+  
+  .sticker-container {
+    display: contents; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;/* Two columns layout *//* Ensures that the grid structure in the parent controls layout */
+  }
+  
+  .sticker-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: space-between; /* Ensures the items within are spaced evenly */
+  }
+  
+  .sticker-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .sticker-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .sticker-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .sticker-item ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .sticker-item a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .sticker-item a:hover {
+    color: #0073F0;
+  }
+  
+  .sticker-item h3 a {
+    color: #0073F0;
+  }
+  
+  .sticker-item h3 a:hover {
+    color: #005bb5;
+  }
+  
+  @media (max-width: 1024px) {
+    .stickers-section {
+      grid-template-columns: repeat(1, 1fr); /* One column layout on smaller screens */
+    }
+  
+    .sticker-item {
+      width: 100%; /* Full width in single column mode */
+    }
+  }
+  

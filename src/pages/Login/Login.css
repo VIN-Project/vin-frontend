@@ -1,0 +1,54 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://www.cnet.com/a/img/CSTqzAl5wJ57HHyASLD-a0vS2O0=/940x528/2021/04/05/9e065d90-51f2-46c5-bd3a-416fd4983c1a/elantra-1080p.jpg');
+    height: calc(-45px + 100vh);
+    min-height: 600px;
+}
+
+.login-box {
+    max-width: 440px;
+    width: 100%;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    height: 80vh;
+}
+
+.login-form-wrapper {
+    border: 2px solid #1890ff;
+    /* Primary color */
+    padding: 16px;
+    border-radius: 16px;
+    height: 92%;
+}
+
+.login-title {
+    font-family: 'Bai Jamjuree', sans-serif;
+    /* Example custom font */
+    font-size: 24px;
+    font-weight: 700;
+    color: #1890ff;
+    /* Primary color */
+}
+
+.forgot-password,
+.register-link,
+.home-link {
+    margin-top: 16px;
+    text-align: left;
+}
+
+.forgot-password a,
+.register-link a,
+.home-link a {
+    color: #1890ff;
+    /* Primary color */
+    text-decoration: underline;
+    cursor: pointer;
+}

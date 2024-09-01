@@ -1,0 +1,731 @@
+.vin-decoder-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to right, #021f56, #4851f5);
+    color: white;
+  }
+  
+  .vin-decoder-content {
+    flex: 1;
+    margin-right: 50px;
+  }
+  
+  .vin-decoder-form {
+    flex: 1;
+    background-color: rgb(34, 77, 215);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+  }
+  
+  .search-method-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .search_by-toggle {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search_by-toggle.active {
+    background-color: #112387;
+    color: white;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-submit-btn {
+    padding: 15px;
+    background-color: #15178e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .form-submit-btn:hover {
+    background-color: #090f48;
+  }
+  
+  .vin-extra-links {
+    margin-top: 20px;
+  }
+  
+  .vin-extra-links a {
+    color: #007bff;
+  }
+  
+  .app-store-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .app-store-links img {
+    height: 50px;
+  }
+  
+  .vin-decoder-info-container {
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .vin-decoder-heading h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #080808;
+    margin-bottom: 15px;
+  }
+  
+  .vin-decoder-description p {
+    font-size: 19px;
+    color: #080808;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .vin-decoder-description ul {
+    list-style-type: disc;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .vin-decoder-description ul li {
+    font-size: 19px;
+    color: #080808;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .vin-info-container {
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .vin-info-heading h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .vin-info-description p {
+    font-size: 21px;
+    color: #080808;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .vin-info-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .vin-info-grid ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .vin-info-grid ul li {
+   
+    font-size: 20px;
+    color: #080808;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .vin-info-grid ul li::before {
+    content: '•';
+    color: #070707;
+    margin-right: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .vin-info-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .vin-info-grid ul {
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  .find-vin-container {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .find-vin-heading h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .find-vin-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .find-vin-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .find-vin-description {
+    font-size: 18px;
+    color: #080808;
+  }
+  
+  .find-vin-description p {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .find-vin-description ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .find-vin-description ul li {
+    font-size: 18px;
+    color: #080808;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .find-vin-description a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .find-vin-description a:hover {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  .vin-comparison-container {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .vin-comparison-heading h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #080808;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .vin-comparison-text p {
+    font-size: 18px;
+    color: #060606;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .vin-comparison-table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .vin-comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .vin-comparison-table th, 
+  .vin-comparison-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .vin-comparison-table th.darkbgt {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .vin-comparison-table .freevd i,
+  .vin-comparison-table .vhr i {
+    color: #0f3e1a;
+    font-size: 18px;
+  }
+  
+  .vin-comparison-table .fa-times-circle {
+    color: #68020d;
+  }
+  
+  .vin-comparison-button {
+    text-align: center;
+  }
+  
+  .vin-comparison-link {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .vin-comparison-link:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  .vh-makes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .vh-make {
+    margin: 10px 15px;
+  }
+  
+  .vh-make a {
+    font-size: 18px;
+    color: #0e08bf;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .vh-make a:hover {
+    color: #0e1595;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .vh-make a {
+      font-size: 16px;
+    }
+}
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.section-heading h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.vin-table {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.vin-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.vin-column {
+  width: 24%;
+  text-align: left;
+}
+
+.vin-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  background-color: #060606;
+  color: white;
+  text-align: center;
+}
+
+.vin-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.vin-column li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.section-summary {
+  text-align: left;
+}
+
+.section-summary p {
+  font-size: 16px;
+  text-align: left;
+}
+
+.wmi-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.wmi-heading h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wmi-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.wmi-table-container {
+  margin-top: 20px;
+}
+
+.wmi-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.wmi-table-container th, .wmi-table-container td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.wmi-table-container th {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+}
+
+.wmi-table-container td {
+  background-color: #f9f9f9;
+  .wmi-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.wmi-heading h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wmi-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.wmi-table-container {
+  margin-top: 20px;
+}
+
+.wmi-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.wmi-table-container th, .wmi-table-container td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.wmi-table-container th {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+}
+
+.wmi-table-container td {
+  background-color: #f9f9f9;
+  .wmi-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.wmi-heading h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wmi-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.wmi-table-container {
+  margin-top: 20px;
+}
+
+.wmi-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.wmi-table-container th, .wmi-table-container td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.wmi-table-container th {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+}
+
+.wmi-table-container td {
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+.wmi-table-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.wmi-table-container tr:hover {
+  background-color: #ddd;
+}
+
+}
+
+.wmi-table-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.wmi-table-container tr:hover {
+  background-color: #ddd;
+}
+
+}
+
+.wmi-table-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+  
+}
+
+.wmi-table-container tr:hover {
+  background-color: #ddd;
+}
+
+.model-year-codes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subheading {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.year-code-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Adjust this to have the desired number of columns */
+  gap: 1px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.year-code-grid div {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.year-code-grid div:hover {
+  background-color: #eaeaea;
+}
+.vin-tools-heading{
+  font-size: 28px;
+  text-align: left;
+  padding: 30px;
+}
+.tools-link{
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.review-section-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #f9f9f9;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.review-info {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.reviews-summary {
+  color: #0073F0;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.reviews-heading {
+  color: #000;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: -20px;
+}
+
+.trustpilot-logo img {
+  width: 156px;
+  height: 81px;
+}
+
+.customer-review {
+  flex: 1;
+  padding: 20px;
+}
+
+.customer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.customer-photo {
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.customer-details {
+  flex-direction: column;
+  justify-content: left;
+}
+
+.customer-name {
+  font-size: 20px;
+}
+
+.customer-rating i {
+  color: gold;
+}
+
+.customer-feedback {
+  margin-top: 10px;
+}
+
+.experience-date {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.feedback-text {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.review-button-wrapper {
+  margin-top: 10px;
+  text-align: center; /* Ensure the button is centered */
+}
+
+.review-button {
+  display: inline-block;
+  background-color: #38B98C;
+  color: #fff;
+  padding: 10px 20px; /* Adjusted padding for more uniform spacing */
+  text-decoration: none;
+  border-radius: 4px;  /* Slightly rounded corners for a clean look */
+  font-size: 16px;
+  font-weight: 500;  /* Adjusted font weight for a balanced text */
+  line-height: 1;  /* Ensures the text aligns properly */
+}
+
+.review-button:hover {
+  background-color: #1CA06D; /* Slightly darker color on hover */
+}
+
+.review-button svg {
+  width: 14px; /* Small icon size */
+  height: 14px;
+  fill: #fff;
+  margin-right: 8px; /* Space between the star icon and text */
+  vertical-align: middle; /* Align icon vertically with the text */
+}
+
+
+.star-icon {
+  fill: #fff;
+  margin-right: 8px;
+}
+
+
+

@@ -1,0 +1,562 @@
+.acura-vin-decoder {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.why-vin-decoding, .vin-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.content-column {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-column {
+    flex: 1;
+    text-align: center;
+}
+
+.vin-info-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+p, ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .why-vin-decoding, .vin-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-column {
+        padding-right: 0;
+    }
+
+    .vin-info-image {
+        margin: 20px 0;
+    }
+}
+
+
+
+
+.vin-decoder-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.acura-logo {
+    width: 120px;
+    height: 120px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.why-vin-decoding {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.why-vin-decoding h2 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.vin-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.vin-info h2 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.vin-info-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    display: block;
+}
+
+.vin-info ul {
+    list-style-type: disc;
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
+.vin-info ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.how-to-decode {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.decode-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.steps {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.step img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.step p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.image-column {
+    flex: 1;
+    text-align: center;
+}
+
+.vin-check-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .decode-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .steps {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .step {
+        justify-content: center;
+    }
+
+    .vin-check-image {
+        margin-top: 20px;
+    }
+}
+.carousel-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .carousel-container {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+  }
+  
+  .carousel-image {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .content-column {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-12, .col-4, .col-8 {
+    flex: 1;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  .col-8 {
+    width: 66.66%;
+  }
+  
+  .col-4 {
+    width: 33.33%;
+  }
+  
+  .image-box img {
+    .image-box img {
+        display: block;
+        width: 100%;
+        height: auto;  /* Maintain aspect ratio */
+        max-width: 100%;
+        object-fit: cover;
+      }
+
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .vin-model-list li {
+    margin-bottom: 10px;
+  }
+  
+ 
+  .useful-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px;
+  background-color: #f5f7fa;
+  
+}
+
+.useful-info-container .left-column {
+  flex: 1;
+  max-width: 60%;
+ 
+}
+
+.useful-info-container .right-column {
+  flex: 0.35;
+  max-width: 35%;
+}
+
+.useful-info-container h2 {
+  font-size: 1.8rem;
+  color: #2b4a6d;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+  }
+  
+  /* Useful Information Section */
+  .useful-info {
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  .useful-info .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .useful-info h2 {
+    color: #2b4a6d;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .useful-info p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.8;
+  }
+  
+  .useful-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .useful-info ul li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  
+  .useful-info ul li strong {
+    color: #2b4a6d;
+  }
+  
+  .vin-model-list li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #2b4a6d;
+  }
+  
+  .vin-model-list li::before {
+    content: "\2714"; /* Checkmark symbol */
+    margin-right: 10px;
+    color: #4bb543;
+  }
+  
+  /* Responsive Layout for Useful Info Section */
+  @media (max-width: 992px) {
+    .useful-info .col-8,
+    .useful-info .col-4 {
+      max-width: 100%;
+      flex: 100%;
+    }
+  
+    .useful-info .col-8 {
+      margin-bottom: 30px;
+    }
+  }
+  
+  /* Accordion Styles */
+  .faq-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .faq-section h2 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ddd;
+    padding: 2px 0;
+    text-align: left;
+  }
+  
+  .accordion-item h2 {
+    text-align: left;
+  }
+  
+  .accordion-title {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #34495e;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+    text-align: left;
+  }
+  
+  .accordion-title:hover {
+    color: #3498db;
+  }
+  
+  .accordion-icon {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .accordion-content {
+    padding: 15px 10px;
+    background-color: #f9f9f9;
+    color: #444;
+    display: none;
+    text-align: left;
+  }
+  
+  .accordion-content.open {
+    display: block;
+    text-align: left;
+  }
+  
+  .accordion-title.active {
+    color: #3498db;
+  }
+  
+  .accordion-title.active .accordion-icon {
+    transform: rotate(180deg);
+  }
+  
+  .accordion-content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2c3e50;
+  }
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  /* base style*/
+  .manufacturer-decoder {
+    padding: 30px;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+  }
+  
+  .manufacturer-decoder h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    background-color: #005a8c;
+    padding: 10px 0;
+  }
+  
+  /* Flexbox styling for columns */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  .col {
+    flex: 1;
+    max-width: 22%; /* Adjust width of the columns */
+    padding: 10px;
+  }
+  
+  .icon-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .icon-list-item {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #0f2a39;
+    text-align: left;
+    font-style: bold;
+  }
+  
+  .icon-list-item a {
+    text-decoration: none;
+    color: #08205d;
+    transition: color 0.3s ease;
+  }
+  
+  .icon-list-item a:hover {
+    color: #6822e0;
+  }
+  
+  .icon-list-item.heading {
+    font-weight: bold;
+    color: #0d2135;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+    margin-bottom: 10px;
+    
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .col {
+      max-width: 48%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .col {
+      max-width: 100%;
+    }
+  }
+  
+  
+  

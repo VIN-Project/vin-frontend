@@ -1,0 +1,110 @@
+
+.vin-decoder-container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to right, #021f56, #4851f5);
+    color: white;
+  }
+  
+  .vin-decoder-content {
+    flex: 1;
+    margin-right: 50px;
+  }
+
+.vin-decoder-form {
+    flex: 1;
+    background-color: rgb(13, 4, 72);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+    
+  }
+  
+  .search-method-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .search_by-toggle {
+    padding: 10px 20px;
+    background-color: #4a0adf;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .search_by-toggle.active {
+    background-color: #112387;
+    color: white;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-submit-btn {
+    padding: 15px;
+    background-color: #15178e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .form-submit-btn:hover {
+    background-color: #090f48;
+  }
+  .vin-details-form {
+    border: 3px solid #f8f7f9;
+    stroke: #220472;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 5px;
+    padding-right: 10px;
+  }
+  
+  .form-group {
+    width: 48%; /* Adjust width for two fields per row */
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 2rem;
+    color: #faf8f8;
+    margin-bottom: 5px;
+    text-align: left;
+    
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #f8f6f6;
+    border-radius: 5px;
+    padding-right: 10px;
+  
+  }

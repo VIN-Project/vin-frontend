@@ -1,0 +1,152 @@
+/* General Navbar Styling */
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.logo img {
+    height: 70px;
+    width: 136px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.nav-links li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0055B3;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+    color: #0055B3;
+    font-weight: bold;
+}
+
+.dropdown-toggle i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 16px;
+    color: #0055B3;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+/* Login/Signup Links */
+.auth-links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.auth-links a {
+    margin-left: 15px;
+    color: #0055B3;
+    text-decoration: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .btn.menu-btn {
+        display: block;
+    }
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: #fff;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links.open {
+        transform: translateX(0);
+    }
+
+    .auth-links {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+    }
+
+    .dropdown-toggle {
+        width: 100%;
+    }
+
+    .dropdown-menu li a {
+        padding: 12px;
+    }
+}
