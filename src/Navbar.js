@@ -72,21 +72,9 @@ const Navbar = () => {
           </li>
         </ul>
           <div className="auth-links">
-            <Link to="/login">Login</Link>
-            <Link to="/signup">Sign up</Link>
+            <Button onClick={() =>  window.location.href = "http://localhost:3000/login"}>Login</Button>
+            <Button onClick={() =>  window.location.href = "http://localhost:3000/signup"}>Sign up</Button>
           </div>
-        {token ? (
-          <div className="auth-links">
-            <Button type="dashed" onClick={handleLogout}>
-              Logout
-            </Button>
-          </div>
-        ) : (
-          <div className="auth-links">
-            <Link to="/login">Login</Link>
-            <Link to="/signup">Sign up</Link>
-          </div>
-        )}
       </div>
     </div>
   );

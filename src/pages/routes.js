@@ -2,9 +2,6 @@ import React from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import SampleReports from "../pages/vin-sample/SampleReports";
 import VINDecoder from "./VINDecoder";
-//import WindowSticker from "./WindowSticker";
-import Login from "./Login/Login";
-import Signup from "./Signup/Signup";
 import Acura from "./Acura/Acura";
 import VinForm from "../vin-num/VinForm";
 import ProtectedRoute from "../components/Layout/ProtectedRoute";
@@ -21,7 +18,7 @@ export const routes = {
 };
 
 const LandingPageRouts = () => {
-  const token = localStorage.getItem("TOKEN");
+ 
   return (
     <Routes>
       <Route
@@ -56,12 +53,10 @@ const LandingPageRouts = () => {
           </ProtectedRoute>
         }
       />
-      <Route path={routes.login} element={<Login />} />
-      <Route path={routes.signup} element={<Signup />} />
-      
+  
       <Route
         path="*"
-        element={<Navigate to={token ? routes.VINDecoder : routes.login} />}
+        element={<Navigate to={routes.VINDecoder} />}
       />
     </Routes>
   );
