@@ -1,0 +1,70 @@
+/* css_folders/design.css */
+
+.container {
+  max-width: 82%;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e5e7eb;
+  font-family: 'Arial', sans-serif;
+  margin-top: 4em;
+  position: relative;
+  transform: translate(7.6em, 10px);
+  }
+  
+  .search-bar {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 22px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .message-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .warning-icon {
+    font-size: 30px;
+    color: #f4c542;
+    margin-right: 10px;
+  }
+  
+  .message-text {
+    color: #333;
+  }
+  
+  .message-text p {
+    margin: 0;
+  }
+  
+  .decode-link {
+    color: #0066cc;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+
+  @media (max-width: 768px){
+    .container {
+      margin-top: 1.2em;
+  }
+  .search-bar {
+    margin-top: 54px;
+}
+.container {
+    max-width: 100%;
+    transform: translate(0em, 0px); 
+}
+  }

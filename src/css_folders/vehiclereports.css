@@ -1,0 +1,172 @@
+/* CSS (vehiclereports.css) */
+.vr-report-container {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.vr-report-title {
+    font-size: 51px;
+    color: #2d3b54;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.vr-report-description {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.vr-report-terms {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.vr-link-terms, .vr-link-privacy {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+.vr-link-terms:hover, .vr-link-privacy:hover {
+    text-decoration: underline;
+}
+
+.vr-pricing-section {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 3em;
+    transform: translate(6px, 0px);
+    padding-bottom: 7rem;
+}
+
+.vr-pricing-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 461px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.vr-pricing-header {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.vr-pricing-price {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.vr-pricing-details p {
+    margin-bottom: 15px; /* Add space between each paragraph */
+    font-size: 0.9rem;
+}
+
+.vr-checkout-button {
+    background-color: #007bff;
+    color: white;
+    padding: 13px 17px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 15px;
+    display: inline-block;
+    min-width: 180px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.vr-checkout-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.vr-checkout-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Mobile styles */
+@media (max-width: 640px) {
+  
+    .vr-report-container {
+        padding: 15px;
+        text-align: center;
+    }
+  
+    .vr-report-title {
+        font-size: 32px; /* Reduced font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+  
+    .vr-report-description {
+        font-size: 1.2rem; /* Reduced font size */
+        margin-bottom: 15px; /* Adjust margin */
+        line-height: 1.4; /* Adjust line height */
+    }
+  
+    .vr-report-terms {
+        font-size: 1rem; /* Reduced font size */
+        margin-bottom: 30px; /* Adjust margin */
+    }
+  
+    .vr-pricing-section {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        gap: 2em; /* Adjust gap */
+        padding-bottom: 5rem; /* Adjust padding */
+        padding-right: 11px;
+    }
+    .vr-link-terms, .vr-link-privacy {
+        font-weight: 600;
+    }
+    .vr-pricing-card {
+        width: 100%; /* Full width on mobile */
+        padding: 15px; /* Adjust padding */
+    }
+  
+    .vr-pricing-header {
+        font-size: 1rem; /* Reduced font size */
+        padding: 8px 0; /* Adjust padding */
+        margin-bottom: 10px; /* Adjust margin */
+    }
+  
+    .vr-pricing-price {
+        font-size: 2.5rem; /* Reduced font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+  
+    .vr-pricing-details p {
+        font-size: 0.85rem; /* Reduced font size */
+        margin-bottom: 10px; /* Adjust margin */
+    }
+  
+    .vr-checkout-button {
+        padding: 10px 14px; /* Adjust padding */
+        font-size: 14px; /* Reduced font size */
+        min-width: 160px; /* Adjust button width */
+        margin-top: 15px; /* Adjust margin */
+    }
+  
+    .vr-checkout-button:disabled {
+        background-color: #cccccc;
+    }
+  
+    .vr-checkout-button:hover {
+        background-color: #0056b3;
+    }
+  }
+  

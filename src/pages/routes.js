@@ -5,6 +5,7 @@ import VINDecoder from "./VINDecoder";
 import Acura from "./Acura/Acura";
 import VinForm from "../vin-num/VinForm";
 import ProtectedRoute from "../components/Layout/ProtectedRoute";
+import WindowSticker from "./WindowSticker";
 // Import other pages as needed
 
 export const routes = {
@@ -42,6 +43,14 @@ const LandingPageRouts = () => {
         element={
           <ProtectedRoute>
             <VinForm/>
+          </ProtectedRoute>
+        }
+      />
+        <Route
+        path={routes.windowSticker}
+        element={
+          <ProtectedRoute>
+            <WindowSticker/>
           </ProtectedRoute>
         }
       />

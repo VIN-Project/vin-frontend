@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { Button, message } from "antd";
+import { routes } from "./pages/routes";
 
 
 const Navbar = () => {
@@ -41,7 +42,7 @@ const Navbar = () => {
             <Link to="/VIN-decoder">VIN Decoder</Link>
           </li>
           <li>
-            <Link to="/VinForm">Window Sticker</Link>
+            <Link to={routes.windowSticker}>Window Sticker</Link>
           </li>
           <li>
             <Link to="/dealers">For Dealers</Link>

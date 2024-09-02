@@ -1,0 +1,985 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Arial', sans-serif;
+    font-family: 'circular';
+  }
+  
+  .ws-window-sticker {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0b3a91; /* Matching blue background */
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 6em;
+  }
+  
+  .ws-left-section {
+    flex: 1;
+    margin-right: 40px;
+  }
+  .ws-toggle-txt .ws-txt-h1{
+    font-size: 54px;
+    text-align: center;
+    padding: 0px 16px;
+    font-weight: 700;
+  }
+  .ws-toggle-txt .ws-txt-p{
+    text-align: center;
+    padding: 25px 10px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .ws-right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .ws-toggle-buttons {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .ws-toggle-buttons button {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    background-color: #1f4ec2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .ws-toggle-buttons button:not(:first-child) {
+    margin-left: 10px;
+  }
+  
+  .ws-toggle-buttons button.ws-active {
+    background-color: #0b3a91;
+    border-bottom: 3px solid white;
+  }
+  
+  .ws-form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  .ws-get-sticker {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #356bec;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 18px;
+  }
+  
+  .ws-get-sticker:hover {
+    background-color: #2852b5;
+  }
+  
+  .ws-right-section h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .ws-review {
+    background-color: white;
+    color: #0b3a91;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .ws-right-section h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .ws-right-section p {
+    font-size: 14px;
+  }
+  
+  .ws-right-section strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .ws-trustpilot-icon {
+    width: 150px;
+    margin-top: 20px;
+  }
+  
+  .ws-sticker-content{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 800;
+    padding: 33px;
+  }
+  .ws-window-explainer{
+    display: flex;
+    padding: 0px 7em;
+    gap: 20px;
+  }
+ .ws-left-skickers{
+    max-width: 50%;
+ }
+.ws-right-stickers{
+    max-width: 50%;
+}
+
+.ws-texts-ex{
+    font-size: 20px;
+    padding-right: 17px;
+}
+.ws-btn-stiker{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 85%;
+    gap: 30px;
+}
+.ws-btn-stiker button{
+    border: 1px solid black;
+    padding: 13px 53px;
+    border-radius: 9px;
+    background-color: #2852b5;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    border: none !important;
+}
+
+
+
+/* General Styling */
+.window-sticker-container {
+    text-align: center;
+    padding: 37px 28px;
+  }
+  
+  h1 {
+    font-size: 52px;
+    color: #000;
+    margin-bottom: 0px;
+    font-weight: 800;
+    padding: 10px 2.5em;
+
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 905px;
+    margin: 0 auto;
+    margin-top: 14px;
+  }
+.video-container p{
+  transform: translate(0px, 45px);
+}
+  .video-container iframe{
+    width: 906px;
+    height: 450px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  .ws-section-title {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+    font-weight: 700;
+  }
+  
+  .ws-section-description {
+    font-size: 17px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+
+  /* General Styling */
+.ws-features-container {
+    width: 100%;
+    padding: 8px 110px;
+  }
+  
+  .ws-heading {
+    font-size: 29px;
+    color: #000;
+    padding-left: 0px;
+  }
+  
+  .ws-description {
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .ws-features-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .ws-feature-item {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  .ws-feature-item strong{
+    color: black;
+  }
+
+  /* General Styling */
+.wst-container {
+    line-height: 1.6;
+    max-width: 100%;
+    padding: 10px 110px;
+  }
+  
+  .wst-title {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .wst-description {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .wst-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .wst-list-item {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .wst-subtitle {
+    font-size: 28px;
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .vehicle-selector {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 29px;
+  }
+  
+  .vehicle-button {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    width: 158px;
+    padding: 16px 0px;
+    margin-top: 7px;
+    }
+  
+  .vehicle-button:hover {
+    background-color: #ddd;
+  }
+  
+  .image-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .image-preview img {
+    width: 100%;
+    max-width: 748px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .ws-btn-one{
+    border: 1px solid black;
+    padding: 11px;
+    width: 17em;
+    margin-top: 25px;
+    border-radius: 9px;
+    background-color: #2852b5;
+    color: white;
+    border: none;
+    font-size: 18px;
+  }
+  .ms-benefits-title{
+    text-align: center;
+    padding-top: 36px;
+
+  }
+.ms-benefits-description{
+   padding: 0em 7em;
+}
+  .ms-benefits-circles{
+    display: flex;
+    position: relative;
+    padding: 0px 31px;
+    margin-left: 12px;
+  }
+  .ws-circle-txt{
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 20px;
+    position: absolute;
+    top: 10em;
+    width: 26%;
+    padding: 0px 67px;
+    font-size: 19px;
+    text-align: center;
+    transform: translate(32px, 10px);
+  }
+  .ms-benefits-circles .ms-circle{
+    max-width: 33%;
+  }
+  .ms-circle img{
+    height: 492px;
+  }
+
+
+  .mstxt-container {
+    padding: 1em 10em;
+    font-family: Arial, sans-serif;
+  }
+  
+  .mstxt-intro {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .mstxt-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #2852b5;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .mstxt-title {
+    font-size: 2.5em;
+    color: white;
+    font-weight: bold;
+    width: 40%;
+    border: 2px solid black;
+    height: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center !important;
+    background-color: #2852b5;
+    border: none;
+  }
+  
+  .mstxt-content {
+    width: 75%;
+  }
+  
+  .mstxt-content ul {
+    padding: 14px 10px 0px 28px;
+
+  }
+  
+  .mstxt-content li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    list-style-type: disc;
+  }
+
+
+  .ms-sheet-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Title Styling */
+  .ms-sheet-title {
+    font-size: 52px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Description Text */
+  .ms-sheet-description {
+    font-size: 1.2em;
+    color: #666;
+    text-align: center;
+    padding: 1em 7em;
+    margin: 0px;
+  }
+  
+  /* Image Container */
+  .ms-sheet-image-container {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    transform: translate(32%, 0%);
+  }
+  
+  .ms-sheet-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button Styling */
+  .ms-sheet-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .ms-sheet-button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  .window-stickers {
+    padding: 0px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.window-stickers h1 {
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.manufacturers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: start;
+    text-align: left;
+    padding: 1px 8em;
+    margin-left: 8em;
+}
+
+.manufacturer-group {
+    margin-bottom: 20px;
+}
+
+.manufacturer-group h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.manufacturer-group ul {
+    list-style: none;
+    padding: 0;
+}
+
+.manufacturer-group li {
+    margin-bottom: 8px;
+}
+
+.manufacturer-group a {
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.manufacturer-group a:hover {
+    text-decoration: underline;
+}
+
+.ms-guide-txt{
+  text-align: center;
+}
+
+.ms-p-guide-txt{
+  padding: 0em 7em;
+}
+
+
+.sticker-container.proms {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.proms-title {
+    font-size: 52px;
+    margin-bottom: 10px;
+    padding: 0em 2em;
+
+}
+
+.proms-description {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.proms-options {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.proms-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex-basis: 48%;
+  margin-bottom: 20px;
+}
+
+.proms-card-title {
+    background-color: #2852b5;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.proms-card-description {
+  font-size: 18px;
+  color: #333;
+  padding: 28px 20px;
+}
+
+.proms-card-button {
+  padding: 6px 40px;
+    background-color: #2852b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.proms-card-button:hover {
+  background-color: #296cb3;
+}
+
+.proms-actions {
+  margin-top: 20px;
+}
+
+.proms-action-button {
+  padding: 12px 58px;
+    margin: 0 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 19px;
+}
+
+.proms-action-button:hover {
+  background-color: #007bff;
+}
+
+.proms-action-button2{
+    font-weight: 600;
+    font-size: 19px;
+}
+
+
+
+.ms-vin-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #1e4e8c; /* Blue background color */
+  color: white;
+}
+
+.ms-vin-title {
+    font-size: 52px;
+    margin-bottom: 20px;
+    color: white;
+    padding: 0em 2.7em;
+}
+
+.ms-vin-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.ms-vin-steps {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.ms-vin-step {
+  max-width: 30%;
+  text-align: center;
+}
+.ms-vin-step p{
+  color: white;
+}
+.ms-vin-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 9em;
+
+}
+
+.ms-vin-btn {
+  padding: 12px 26px;
+  background-color: white;
+  color: #1e4e8c;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+
+}
+
+.ms-vin-btn:hover {
+  background-color: #d3d3d3;
+}
+
+  @media screen and (max-width: 768px) {
+    .ws-toggle-txt .ws-txt-h1 {
+      font-size: 38px;
+  }
+  .ws-toggle-txt .ws-txt-p {
+    font-size: 16px;
+    color: white;
+}
+.ws-toggle-buttons button {
+  padding: 4px 5px;
+}
+    .button-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .vehicle-button {
+      width: 80%;
+      padding: 12px;
+      font-size: 1.2em;
+    }
+  
+    .image-preview img {
+      max-width: 100%;
+      padding: 0px 20px;
+    }
+
+    .ms-sheet-title {
+      font-size: 36px;
+    }
+  
+    .ms-sheet-description {
+      font-size: 16px;
+      padding: 0px;
+    }
+  
+    .ms-sheet-button {
+      padding: 8px 15px;
+      font-size: 0.9em;
+    }
+
+    .manufacturers-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0px;
+      margin-left: 0px;
+      text-align: center;
+  }
+  
+    .manufacturer-group {
+      width: 80px;
+    }
+  
+    .window-stickers h1 {
+      font-size: 36px;
+    }
+  
+    .manufacturer-group h2 {
+      font-size: 16px;
+    }
+
+
+.ms-vin-title {
+      font-size: 1.5rem;
+    }
+  
+    .ms-vin-subtitle {
+      font-size: 1rem;
+    }
+  
+    .ms-vin-steps {
+      flex-direction: column;
+    }
+  
+    .ms-vin-step {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .ms-vin-icon {
+      width: 100px;
+      margin-left: 7.4em;
+    }
+  
+    .ms-vin-btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .ws-window-sticker {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ws-left-section, .ws-right-section {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .ws-toggle-buttons button {
+      width: 45%;
+      margin: 0 5px;
+    }
+  
+    .ws-right-section h4 {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+  .ws-sticker-content {
+      font-size: 36px;
+      padding: 20px 20px 0px 20px;
+  }
+
+.ws-window-explainer {
+   display: block !important;
+   padding: 20px !important;
+}
+.ws-left-skickers {
+  max-width: 100%;
+  text-align: center;
+}
+.ws-right-stickers {
+  max-width: 100%;
+}
+.ws-btn-stiker {
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 30px;
+}
+.window-sticker-container {
+  text-align: center;
+  padding: 10px 22px;
+}
+
+.window-sticker-container h1{
+  font-size: 36px;
+}
+    h1 {
+        font-size: 36px;
+        padding: 0px 20px;
+      }
+    
+      .video-container iframe {
+        width: 370px;
+        height: 390px;
+      }
+  .ws-features-container {
+        width: 100%;
+        padding: 8px 25px;
+   }
+      p {
+        font-size: 1rem;
+      }
+      .ws-heading {
+        font-size: 28px;
+        padding: 0px;
+        margin-bottom: 10px;
+      }
+
+      .ws-heading h1{
+        padding: 10px 0px;
+      }
+      
+    .wst-container {
+        padding: 10px 25px;
+    }
+      .ws-description {
+        font-size: 1rem;
+      }
+    
+      .ws-features-list {
+        font-size: 1rem;
+      }
+    
+      .ws-feature-item {
+        margin-bottom: 12px;
+      }
+      .wst-title {
+        font-size: 28px;
+      }
+    
+      .wst-description {
+        font-size: 1rem;
+      }
+    
+      .wst-list-item {
+        font-size: 1rem;
+        margin-bottom: 12px;
+      }
+      .mstxt-box {
+        flex-direction: column;
+    }
+      .wst-subtitle {
+        font-size: 28px;
+      }
+      .ms-benefits-title {
+        font-size: 36px;
+      }
+    
+      .ms-benefits-description {
+        font-size: 1em;
+        padding: 0 20px;
+      }
+    
+      .ms-benefits-circles {
+        display: none;
+       }
+
+    .ms-p-guide-txt {
+        padding: 0px 20px;
+    }
+    .ws-btn-one {
+      display: none;
+    }
+    .proms-title {
+      padding: 0px 20px;
+      font-size: 32px;
+    }  
+    .proms-options {
+      display: block;
+  }
+.mstxt-content ul {
+    padding: 17px 18px 0px 31px;
+}
+  .ms-guiding-sticker{
+    height: 22em;
+  }
+    .mstxt-container {
+      padding: 0px 20px;
+    }
+
+    .mstxt-title {
+       text-align: center !important;
+       width: 100%;
+    }
+
+  .ms-sheet-image-container {
+      transform: translate(0%, 0%);
+      max-width: 100%;
+  }
+
+
+.ms-vin-title {
+    padding: 0px;
+}
+
+.proms-action-button {
+  padding: 12px 38px;
+  font-size: 17px;
+  font-weight: 600;
+}
+      }
+    
+      .ms-circle {
+        width: 80%;
+        max-width: 400px;
+      }
+    
+      .ws-circle-txt {
+        font-size: 1em;
+        padding: 10px;
+      }
+
+
+      .mstxt-box {
+        align-items: flex-start;
+      }
+    
+      .mstxt-title {
+        text-align: left;
+      }
+    
+      .mstxt-content {
+        width: 100%;
+      }
+  
+  

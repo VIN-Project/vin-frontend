@@ -1,0 +1,592 @@
+.substicker-window-sticker-lookup {
+    background-image: url("../images/backgroundimage.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    height: 54.5em;
+
+}
+
+.substicker-container {
+    margin: 0 auto;
+    background-color: rgb(22 20 20 / 50%);
+    padding: 47px;
+}
+
+.substicker-lookup-methods {
+    display: flex;
+}
+
+.substicker-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.substicker-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 0px 4em;
+    color: rgb(255, 255, 255);
+}
+
+.substicker-lookup-form {
+    background-color: rgba(8, 60, 156, 0.582);
+    padding: 20px;
+    margin: 0em 14em;
+}
+
+.substicker-lookup-methods button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Buttons take full width */
+}
+
+.substicker-lookup-methods button.substicker-active {
+    background-color: #0056b3;
+}
+
+.substicker-input-group {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 5px; /* Add space between inputs */
+}
+.ms-video-section-pro iframe{
+    display: inline-flex;
+}
+/* Add 5px gap between the inputs in sub-input-btns */
+.sub-input-btns {
+    display: flex;
+    gap: 5px;
+}
+
+.substicker-input-group input {
+    width: 100%; /* Inputs take full width */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.sub-trp-input select{
+    width: 23.9em;
+    color: rgb(156, 156, 156);
+    padding-left: 10px;
+}
+
+.sub-trp-input option{
+    padding: 15px;
+    font-size: 17px;
+    margin-top: 5px;
+}
+.substicker-get-sticker-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.sub-trp-input{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two columns of equal width */
+  gap: 5px;
+  }
+
+.substicker-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 17px;
+}
+
+.substicker-links a {
+    color: white;
+    text-decoration: none;
+}
+.substicker-app-buttons {
+    display: flex;
+    justify-content: center;
+}
+.substicker-app-buttons img {
+    width: 180px;
+    margin: 5px;
+}
+
+.substicker-footer-text p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+
+.aws-heading-3{
+    font-size: 34px;
+    font-weight: 600;
+    color: #3f3b3b;
+    margin-top: 20px;
+}
+.aws-description-3{
+    text-align: left;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.aws-description-3 span{
+    color: black;
+    font-weight: 600;
+}
+/* Base styles for both desktop and mobile */
+.aws-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Heading */
+.aws-heading {
+    font-size: 34px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+
+.vin-info-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .vin-info-container h2 {
+    font-size: 34px;
+    font-weight: 600;
+    color: #3f3b3b;
+    margin-top: 20px;
+  }
+  
+  .vin-info-container p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .vin-info-container ul {
+    list-style-type: decimal;
+    padding-left: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .vin-info-container ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: rgb(68, 67, 67);
+    font-family: sans-serif;
+  }
+  
+  .vin-image-container {
+    text-align: center;
+  }
+  
+  .vin-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+/* Description paragraph */
+.aws-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: sans-serif;
+}
+.report-img4k{
+    display: inline-flex;
+    margin-top: 15px;
+}
+/* Steps list */
+.aws-steps {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.aws-steps li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: left;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+/* Links */
+.aws-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.aws-link:hover {
+    text-decoration: underline;
+}
+.aws-heading-2{
+    font-size: 34px;
+    font-weight: 600;
+    color: #3f3b3b;
+}
+.aws-steps-2{
+    color: black;
+    text-align: left;
+}
+.aws-description-2{
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: sans-serif;
+}
+.aws-steps-2 li{
+    line-height: 32px !important;
+    font-size: 17px;
+    font-weight: 500;
+}
+/* Button */
+.aws-button {
+    display: inline-block;
+    background-color: #2c97de;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 15px 47px;
+}
+
+.aws-button:hover {
+    background-color: #1a73e8;
+}
+.ms-container-pro{
+    padding: 0px 3em;
+    padding-top: 2.8em;
+    gap: 20px;
+}
+.sub-manufacturers-container{
+    border: none !important;
+    background-color: #EDF2F7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.sub-manufacturer-group{
+    padding: 0px 5px;
+}
+.ms-vd-links{
+   text-align: left;
+}
+.ms-links-header{
+    text-align: left;
+}
+.ms-links-wrapper {
+    border: 1px solid #ddd;
+    padding: 10px 36px;
+    border-radius: 5px;
+    border: none;
+    background-color: #EDF2F7;
+}
+.p-txt-sub li{
+    color: rgb(104, 104, 104);
+    font-size: 19px;
+}
+.aws-description-3 li{
+    color: rgb(66, 66, 66);
+    font-size: 18px;
+}
+.aws-description-list li{
+    color: rgb(63, 63, 63);
+    font-size: 18px;
+    text-align: left;
+    list-style-type: disc;
+}
+.ms-links-header {
+    font-size: 24px;
+    margin-top: 31px;
+    font-weight: 600;
+}
+.ms-links-list li{
+    margin: 10px 0px;
+}
+
+.ms-links-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ms-link-item {
+    text-decoration: none;
+    color: #585fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ms-link-item:hover {
+    text-decoration: underline;
+}
+
+.ms-links-list p{
+    font-size: 24px;
+    margin-top: 31px;
+    font-weight: 600;
+}
+
+.sub-h2-group{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 32px;
+    margin-bottom: 0px;
+    
+}
+.brand-link-pro{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #585fff;
+   
+}
+
+
+.unorder-heading-txt{
+    font-size: 34px;
+    font-weight: 600;
+    color: #3f3b3b;
+}
+.unorder-ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+    gap: 20px; /* Space between grid items */
+    transform: translate(5em, 14px);
+}
+.unorder-ul li{
+    color: black;
+    list-style-type: disc;
+    text-align: left;
+    font-size: 17px;
+}
+.h-txt-center{
+    font-size: 34px;
+    font-weight: 600;
+    color: #3f3b3b;
+}
+/* Base styling for FAQ container */
+.faq-container {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for FAQ heading */
+.faq-h2-all {
+    font-size: 34px;
+    font-weight: 600;
+    color: #3f3b3b;
+    margin-top: 36px;
+}
+
+/* Styling for the FAQ accordion structure */
+.faq-accordion-map {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styling for each FAQ item */
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 37px 21px;
+    cursor: pointer;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+/* Styling for FAQ questions with icons */
+.faq-question-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* Active FAQ item styling */
+.faq-item.active .faq-question-icons {
+    color: #b3c0cd;
+}
+
+/* FAQ answer section styling with animation */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Expanded FAQ answer section */
+.faq-item.active .faq-answer {
+    max-height: 500px; /* Ensure this is enough to accommodate the content */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Class for FAQ answer paragraph */
+.faqs-ans {
+    margin: 0;
+    text-align: left;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .aws-heading, .aws-heading-2, .aws-heading-3,
+     .vin-info-container h2, .h-txt-center, .unorder-heading-txt, .faq-h2-all{
+        font-size: 27px;
+    }
+   
+    .substicker-container {
+        padding: 20px;
+    }
+
+    .substicker-lookup-form {
+        background-color: rgba(226, 227, 235, 0.9);
+        padding: 10px;
+        margin: 0;
+    }
+
+    .substicker-lookup-methods {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .substicker-container p {
+        font-size: 17px;
+        padding: 0;
+    }
+
+    .substicker-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .sub-trp-input {
+        flex-direction: column;
+    }
+
+    .substicker-input-group input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .substicker-lookup-methods button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .substicker-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .substicker-links a {
+        margin-bottom: 10px;
+    }
+
+    .substicker-app-buttons img {
+        width: 100px;
+    }
+
+    .substicker-get-sticker-button {
+        padding: 10px;
+    }
+
+    .ms-container-pro {
+        padding: 0 1em;
+    }
+
+    .ms-container-pro {
+        flex-direction: column;
+    }
+
+    .ms-video-section-pro {
+        width: 100% !important;
+        padding-bottom: 20px;
+    }
+
+    .ms-vd-links {
+        display: none;
+    }
+
+    .ms-links-wrapper {
+        padding: 10px;
+    }
+
+    .ms-links-header {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .ms-links-list li {
+        margin: 10px 0;
+    }
+
+    .ms-link-item {
+        font-size: 15px;
+    }
+
+    .sub-h2-group {
+        padding-left: 0;
+        text-align: center;
+    }
+
+
+    .vin-info-container h2 {
+        font-size: 1.5rem;
+      }
+    
+      .vin-info-container p {
+        font-size: 0.9rem;
+      }
+    
+      .vin-info-container ul li {
+        font-size: 0.9rem;
+      }
+      .unorder-ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0px;
+        transform: translate(0px);
+        padding-left: 60px;
+        margin-top: 18px;
+    }
+    .faq-item {
+        padding: 19px 14px;
+        text-align: left;
+    }
+    .aws-button {
+        font-size: 16px;
+        padding: 15px 26px;
+        font-weight: 600;
+    }
+    
+    
+}

@@ -1,0 +1,310 @@
+/* css_folders/tools.css */
+
+.tls-container {
+  max-width: 100%;
+  background-color: #e5e7eb;
+  max-height: 100%;
+  width: calc(100% - 15.7em);
+  padding: 0em 3em;
+  transform: translate(251px, 71px);
+  font-family: 'circular';
+}
+
+.tls-header {
+  margin-bottom: 2rem;
+}
+
+.tls-title {
+  font-size: 49px;
+  font-weight: bold;
+  color: #1a202c;
+}
+
+.tls-tab-nav {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+.tls-tab-button {
+  padding: 1rem;
+  margin-right: 1rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-size: 18px;
+  color: #718096;
+  cursor: pointer;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.tls-tab-button:hover,
+.tls-tab-button.tls-active {
+  border-color: #143d80;
+  color: #0a2654;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.tls-content-section {
+  background-color: #f3f3f3;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tls-content-section h2 {
+  font-size: 1.88rem;
+  margin-bottom: 1.5rem;
+  color: #0066cc;
+  font-weight: 600;
+}
+
+.tls-three_switches {
+  display: flex;
+}
+
+.tls-service-form .tls-input-group,
+.tls-recall-form .tls-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.tls-input-group label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tls-input-group input[type="text"] {
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  width: 75%;
+}
+
+.tls-three_switches .tls-help-icon {
+  color: white;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  right: 37px;
+  border: 1px solid black;
+  padding: 0px 4px 0px 9.2px;
+  height: 30px;
+  width: 29px;
+  border-radius: 50%;
+  background-color: black;
+  border: none;
+  font-size: 20px;
+}
+
+.tls-toggle-group {
+  display: flex;
+  align-items: center;
+  transform: translate(-12px, 0px);
+  
+}
+
+.tls-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin: 0 0.5rem;
+}
+
+.tls-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.tls-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.tls-slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .tls-slider {
+  background-color: #2b6cb0;
+}
+
+input:checked + .tls-slider:before {
+  transform: translateX(20px);
+}
+
+.tls-submit-button {
+  background-color: #2b6cb0;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.tls-submit-button:hover {
+  background-color: #185da4;
+}
+
+.tls-search-by {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.tls-search-option {
+  border: 1px solid black;
+  padding: 9px 4px;
+  width: 13em;
+  margin: 4px;
+  transform: translate(-3px, -9px);
+  border-radius: 5px;
+  background-color: #2b6cb0;
+  color: white;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.tls-search-option.tls-active-search {
+  background-color: #0066cc;
+  color: white;
+}
+
+.tls-search-option:not(.tls-active-search) {
+  background-color: white;
+  color: #0066cc;
+}
+
+.tls-input-group input[type="text2"] {
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  width: 45.3%;
+}
+.form-select {
+  --bs-form-select-bg-img: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23343a40%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27m2 5 6 6 6-6%27/%3e%3c/svg%3e);
+  display: block;
+  width: 50%;
+  padding: 0px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+@media (max-width: 640px) {
+  .tls-container {
+    max-width: 100%;
+    background-color: #e5e7eb;
+    max-height: 100%;
+    width: calc(100% - 0%);
+    padding: 0em 2em;
+    transform: translate(0px, 0px);
+    font-family: 'circular';
+    height: 120vh;
+}
+.tls-content-section h2 {
+  font-size: 28px;
+}
+.tls-tab-button:hover, .tls-tab-button.tls-active {
+  font-size: 14px;
+  font-weight: 600;
+}
+.tls-tab-button {
+  font-size: 14px;
+}
+.tls-content-section {
+  padding: 1rem;
+}
+.tls-search-option {
+  padding: 8px;
+  font-size: 13px;
+}
+.tls-input-group input[type="text2"] {
+  width: 97.3%;
+}
+.tls-service-form .tls-input-group, .tls-recall-form .tls-input-group {
+  margin-bottom: 0.5rem !important;
+}
+.tls-submit-button {
+  font-size: 11px;
+}
+.tls-input-group input[type="text"] {
+  width: 100%;
+}
+.tls-toggle-group {
+ transform: translate(0px, 0px);
+}
+.tls-toggle-group span{
+  font-size: 10px;
+ }
+.checkbox span{
+  font-size: 14px;
+}
+.tls-help-icon{
+  display: none;
+}
+.tls-three_switches{
+  gap: 5px;
+}
+.tls-switch{
+  margin-top: 6px;
+}
+.updated_report_contain {
+  margin-top: 0px;
+}
+.form-select {
+  --bs-form-select-bg-img: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23343a40%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27m2 5 6 6 6-6%27/%3e%3c/svg%3e);
+  display: block;
+  width: 100%;
+  padding: 0px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+}
